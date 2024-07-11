@@ -1,0 +1,47 @@
+
+### Day One: Introduction to `SELECT` Statement
+
+#### Learning Objectives:
+- Understand the purpose and usage of the `SELECT` statement in SQL.
+- Learn how to retrieve data from a table using `SELECT * FROM table_name`.
+
+#### `SELECT` Statement Syntax:
+
+The `SELECT` statement in SQL is used to retrieve data from a database. It can fetch specific columns or all columns from a table. 
+The basic syntax for selecting all columns from a table is:
+
+```sql
+SELECT * FROM table_name;
+```
+
+- `SELECT`: Keyword indicating that data will be retrieved.
+- `*`: Asterisk symbol denotes that all columns should be selected.
+- `FROM`: Keyword specifying the table from which to retrieve data.
+- `table_name`: Name of the table from which data is to be fetched.
+
+#### Example:
+Suppose we have a table named `employees` with columns `id`, `name`, `department`, and `salary`. To retrieve all columns from the `employees` table, the SQL query would be:
+
+```sql
+SELECT * FROM employees;
+```
+
+This query would return all rows and columns from the `employees` table, displaying data such as:
+
+| id | name    | department | salary |
+|----|---------|------------|--------|
+| 1  | John    | HR         | 5000   |
+| 2  | Jane    | IT         | 6000   |
+| 3  | Michael | Sales      | 5500   |
+| ...| ...     | ...        | ...    |
+
+#### Notes:
+- Replace `table_name` with the actual name of the table from which you want to fetch data.
+- Using `*` fetches all columns. You can also specify column names (e.g., `SELECT id, name FROM employees`) to retrieve specific columns.
+
+#### Practice:
+- Execute the `SELECT * FROM table_name;` query in your SQL editor or environment.
+- Experiment with modifying the query to select specific columns (`SELECT column1, column2 FROM table_name;`).
+- Check the results to ensure you're retrieving the expected data from your database.
+
+By practicing the `SELECT` statement, you'll build a foundational understanding of querying data in SQL, which is crucial for any data analyst or database developer.
